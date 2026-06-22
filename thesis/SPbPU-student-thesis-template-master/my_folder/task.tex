@@ -1,0 +1,123 @@
+%%%% Начало оформления заголовка - оставить без изменений !!! %%%%
+\input{my_folder/task_settings}	% настройки - начало 
+
+
+{\centering%
+	
+	\Ministry\\
+	\SPbPU\\
+	\institute
+\par}
+}\intervalS% завершает input
+
+				\noindent
+				\begin{minipage}{\linewidth}
+				\vspace{\mfloatsep} % интервал 	
+				\begin{tabularx}{\linewidth}{Xl}
+					&УТВЕРЖДАЮ      \\
+					&\HeadTitle     \\			
+					&\underline{\hspace*{0.1\textheight}} \Head     \\
+					&<<\underline{\hspace*{0.05\textheight}}>> \underline{\hspace*{0.1\textheight}} \approveYear г.  \\  
+				\end{tabularx}
+				\vspace{\mfloatsep} % интервал 	
+				\end{minipage}
+
+\intervalS{\centering\bfseries%
+
+				ЗАДАНИЕ\\
+				на выполнение %с 2020 года 
+				%по выполнению % до 2020 года
+				выпускной квалификационной работы
+
+
+\intervalS\normalfont%
+
+				студенту \uline{\AuthorFullDat{}, гр.~\group}
+
+
+\par}\intervalS%
+%%%%
+%%%% Конец оформления заголовка  %%%%
+ 	
+	
+	
+\begin{enumerate}[1.]
+	\item Тема работы: {\expandafter \ulined <<Разработка модели глубокого обучения для прогнозирования продуктивности сельскохозяйственных растений по генетическим маркерам>>.}
+	%\item Тема работы (на английском языке): \uline{\thesisTitleEn.} % вероятно после 2021 года
+	\item Срок сдачи студентом законченной работы: \uline{\thesisDeadline.} 
+	\item Обзор литературы по теме ВКР:
+		\begin{enumerate}[–]
+			\item Juan,W.;Ahn,K.W.;Chen,Y.-G.;Lin, C.-W. DropDAE:Denosing Autoencoder with Contrastive Learning for Addressing Dropout Events inscRNA-seqData. Bioengineering 2025, 12, 829. https://doi.org/10.3390/ bioengineering12080829
+			
+			\item Lu Q, Zhang M, Niu X, Wang S, Xu Q, Feng Y, Wang C, Deng H, Yuan X, Yu H, Wang Y, 
+			Wei X. Genetic variation and association mapping for 12 agronomic traits in indica rice. 
+			BMC Genomics. 2015 Dec 16;16:1067. doi: 10.1186/s12864-015-2245-2. PMID: 
+			26673149; PMCID: PMC4681178.
+			
+			\item Jiaxin Chen, Cong Tan, Min Zhu, Chenyang Zhang, Zhihan Wang, Xuemei Ni, Yanlin Liu, 
+			Tong Wei, XiaoFeng Wei, Xiaodong Fang, Yang Xu, Xuehui Huang, Jie Qiu, Huan Liu, 
+			CropGS-Hub: a comprehensive database of genotype and phenotype resources for genomic 
+			prediction in major crops, Nucleic Acids Research, Volume 52, Issue D1, 5 January 2024, 
+			Pages D1519–D1529, https://doi.org/10.1093/nar/gkad1062
+		\end{enumerate}
+	\item Исходные данные по работе: 
+	
+	\uline{Данные генетических маркеров и фенотипических характеристик сельскохозяйственных 
+		растений, полученные из открытых научных источников и специализированных баз данных..}% не забываем точку!
+	
+	\item Инструментальные средства:
+	
+	\begin{enumerate}[–]
+		\item языки программирования: Python
+		\item среда разработки: Visual Studio Code
+		\item система контроля версий: git
+	\end{enumerate}
+
+	\printbibliographyTask % печать списка источников % КОММЕНТИРУЕМ ЕСЛИ НЕ ИСПОЛЬЗУЕТСЯ
+	% В СЛУЧАЕ, ЕСЛИ НЕ ИСПОЛЬЗУЕТСЯ МОЖНО ТАКЖЕ ЗАЙТИ В setup.tex и закомментировать \vspace{-0.28\curtextsize}
+	\item Содержание работы:
+	\begin{enumerate}[label=\theenumi\arabic*.]
+		\item Введение. Обоснование актуальности проблемы.
+		\item Постановка задачи.
+		\item Архитектура модели.
+		\item Конфигурации модели и их применение. Вычислительные эксперименты.
+		\item Результаты исследований.
+		\item Выводы.
+		\item Заключение. 
+	\end{enumerate}
+	\item Перечень графического материала: 
+	\begin{enumerate}[label=\theenumi\arabic*.]
+		\item Схема работы метода/алгоритма.%не забываем точку
+		\item Архитектура разработанной программы/библиотеки.%не забываем точку
+	\end{enumerate}	
+
+	\item Консультанты по работе:
+	\begin{enumerate}[label=\theenumi\arabic*.] 
+	\item \uline{\ConsultantNorm{} (нормоконтроль).} %	Обязателен для всех студентов
+	\end{enumerate}
+		\item Дата выдачи задания: \uline{02.10.2025.}
+\end{enumerate}
+
+\intervalS%можно удалить пробел
+
+Руководитель ВКР \uline{\hspace*{0.1\textheight} \Supervisor}
+
+
+\intervalS%можно удалить пробел
+
+Консультант  \uline{\hspace*{0.1\textheight}\ConsultantExtra}
+
+
+\intervalS%можно удалить пробел
+
+%Консультант по нормоконтролю \uline{\hspace*{0.1\textheight} \ConsultantNorm}%ПОКА НЕ ТРЕБУЕТСЯ, Т.К. ОН У ВСЕХ ПО УМОЛЧАНИЮ
+
+Задание принял к исполнению \uline{\thesisStartDate}
+
+\intervalS%можно удалить пробел
+
+Студент \uline{\hspace*{0.1\textheight}  \Author}
+
+
+
+\input{my_folder/task_settings_restore}	% настройки - конец

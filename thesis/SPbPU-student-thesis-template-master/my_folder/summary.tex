@@ -1,0 +1,113 @@
+%% Не менять - Do not modify
+%%\input{my_folder/summary_settings} 
+\chapter*[Count-me]{Реферат} % * - не нумеруем
+\thispagestyle{empty}% удаляем параметры страницы
+%\setcounter{sumPageFirst}{\value{page}}
+%sumPageFirst \arabic{sumPageFirst}
+%
+%
+%% Возможность проверить другие значения счетчиков - debugging
+%\ref*{TotPages}~с.,
+%\formbytotal{mytotalfigures}{рисун}{ок}{ка}{ков},
+%\formbytotal{mytotaltables}{таблиц}{у}{ы}{},
+%There are \TotalValue{mytotalfigures} figures in this document
+%There are \TotalValue{mytotalfiguresInApp} figuresINAPP in this document
+%There are \TotalValue{mytotaltables} tables in this document
+%There are \TotalValue{mytotaltablesInApp} figuresINAPP in this document
+%There are \TotalValue{myappendices} appendix chapters in this document
+%\total{citenum}~библ. наименований.
+
+
+
+%% Для того, чтобы значения счетчиков корректно отобразились, необходимо скомпилировать файл 2-3 раза
+%На \total{mypages}~c.,  
+%\formbytotal{myfigures}{рисун}{ок}{ка}{ков},
+%\formbytotal{mytables}{таблиц}{у}{ы}{},
+%\formbytotal{myappendices}{приложен}{ие}{ия}{ий}%.  
+
+%% 2025!!!
+%% Для того, чтобы значения счетчиков корректно отобразились, необходимо скомпилировать файл 2-3 раза
+На \total{mypages}~c.,  
+\total{myfigures}~{рис.},
+\total{mytables}~{табл.},
+\total{myappendices}~{прил.}%.
+
+
+
+%\noindent
+{Ключевые слова: \keywordsRu} % Ключевые слова из renames.tex
+
+Тема выпускной квалификационной работы: <<\thesisTitle>>. % изменения 2025!
+
+
+%\abstractRu % Аннотация из renames.tex
+В работе разработана архитектура модели глубокого обучения для прогнозирования 
+фенотипических признаков сельскохозяйственных культур на основе SNP-данных. 
+Исследование проведено на трёх культурах: нут, рис и рапс. Рассматривались 
+масса тысячи семян, высота растения, время цветения, содержание масла и 
+глюкозинолатов.
+
+Предложенная модель включает четыре блока: генетического кодирования 
+с механизмом внимания на уровне SNP, трансформерный для моделирования 
+межгенных взаимодействий, прогнозирования фенотипов и реконструкционный 
+для регуляризации скрытых представлений. Для обучения применена многозадачная 
+функция потерь с адаптивным взвешиванием признаков.
+
+Проведена серия вычислительных экспериментов: сравнительный анализ методов 
+аугментации данных, исследование стратегий отбора генов и оценка влияния 
+архитектурных модификаций на точность прогнозирования. Для интерпретации 
+модели использованы значения Шепли, позволившие выявить значимые генные 
+взаимодействия.
+
+Наибольшая точность прогнозирования достигнута для времени цветения рапса 
+(коэффициент корреляции 0.809) и массы тысячи семян нута (0.881). 
+Эффективность подхода подтверждена на данных различных культур, что 
+демонстрирует его обобщающую способность. Разработанная модель может 
+быть применена в селекционных программах для идентификации ключевых 
+генетических маркеров, связанных с продуктивностью растений.
+%\abstractRu % УДАЛИТЬ. Повтор иллюстрации переноса текста на вторую страницу
+
+
+
+\printTheAbstract % не удалять
+
+
+On~\total{mypages}~pages, 
+\total{myfigures}~figures, 
+\total{mytables}~tables,
+\total{myappendices}~appendices%.
+
+%\noindent
+{Keywords: \keywordsEn} % Ключевые слова из renames.tex 
+	
+The subject of the graduate qualification work is <<\thesisTitleEn>>.
+	
+	
+A deep learning architecture for predicting phenotypic traits of agricultural crops from SNP data is developed. The study covers three crops: chickpea, rice and rapeseed. Target traits include thousand seed weight, plant height, flowering time, oil content and glucosinolate content.
+
+The model comprises four blocks: genetic encoding with SNP-level attention, 
+transformer for intergenic interactions, phenotype prediction and reconstruction 
+for regularisation. A multi-task loss with adaptive weighting is employed.
+
+Computational experiments include augmentation methods comparison, gene 
+selection strategies and architectural modifications. Shapley values reveal 
+significant gene interactions.
+
+Top accuracy: rapeseed flowering time (0.809) and chickpea thousand seed 
+weight (0.881). The approach generalises across crops and can be applied 
+in breeding programmes.
+%\abstractEn % Аннотация из renames.tex
+
+%\abstractEn % УДАЛИТЬ. Повтор для иллюстрации переноса текста на вторую страницу
+	
+
+
+%% Не менять - Do not modify
+\thispagestyle{empty}
+%\setcounter{sumPageLast}{\value{page}} %сохранили номер последней страницы Задания
+%\setcounter{sumPages}{\value{sumPageLast}-\value{sumPageFirst}}
+%sumPageLast \arabic{sumPageLast}
+%
+%sumPages \arabic{sumPages}
+%\restoregeometry % восстанавливаем настройки страницы
+%\input{my_folder/summary_settings_restore}	% настройки - конец
