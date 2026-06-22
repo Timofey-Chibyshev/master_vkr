@@ -9,7 +9,7 @@
 ## ⚙️ Установка и запуск
 - Python 3.8+
 - Установка зависимостей: `pip install -r requirements.txt`
-- Запуск обучения: `python code/training/train.py --config configs/rapeseed.yaml`
+- Запуск обучения: :)
 
 ## 📊 Данные
 Источники данных:
